@@ -1,0 +1,74 @@
+% This is the color theme file of the Feather theme.
+% Copyright (c) 2014 by Lilyana Vaskova Vankova <lilqna.v@gmail.com>
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You can find the GNU General Public License at <http://www.gnu.org/licenses/>.
+
+%----------------------------------------------------------------------------------------------------------------------------------
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamercolorthemeCores}[2017/08/22 v1.1.0 The Feather Beamer Theme]
+
+%----------------------------------------------------------------------------------------------------------------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theme options and definitions
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------------------------------------------------
+
+% beamer specific options
+
+               \mode<presentation>%refers to the first four modes (beamer,handout,second and trans). That is, to all modes except the article mode
+{
+
+%----------------------------------------------------------------------------------------------------------------------------------
+
+% colors
+%% defining colors 
+
+%                \definecolor{beamer@barcolor}{RGB}{194,193,204}% light blue
+%                \definecolor{beamer@normaltextcolor}{RGB}{84,97,110}% gray blue
+%             %    \definecolor{beamer@headercolor}{rgb}{0,0.41,0.54} % dark blue
+               \definecolor{beamer@headercolor}{RGB}{255,255,255} % white
+
+
+% %% setting the above deffinitions
+
+               \setbeamercolor{structure}{fg=beamer@headercolor}
+%                \setbeamercolor{normal text}{fg=beamer@normaltextcolor}
+               \setbeamercolor{frametitle}{fg=white,bg=beamer@headercolor}
+               \setbeamercolor{Feather}{fg=beamer@barcolor,bg=beamer@headercolor}
+
+% ####################
+               \definecolor{beamer@barcolor}{RGB}{155,017,030}% light blue ---line%
+               \definecolor{beamer@normaltextcolor}{RGB}{255,255,255}% gray blue -- header% 
+               \definecolor{beamer@headercolor}{RGB}{0,0.41,0.54} % dark blue --textbold%
+               \definecolor{gray(x11gray)}{RGB}{0.75, 0.75, 0.75}
+               \definecolor{beamer@headertext}{RGB}{0,0,0}
+               \definecolor{beamer@headertext2}{RGB}{0,0,240}
+               \definecolor{beamer@fronttext}{RGB}{255,255,255}
+               \definecolor{darkgray(x11gray)}{RGB}{69, 69, 69}
+               \definecolor{redCORES}{RGB}{153, 0, 0}
+
+
+%% setting the above deffinitions
+
+               \setbeamercolor{structure}{fg=beamer@headercolor}
+            %    \setbeamercolor{background}{fg=darkgray}
+               \setbeamercolor{background canvas}{bg=white}
+               \setbeamercolor{normal text}{fg=beamer@headertext}
+               \setbeamercolor{frametitle}{fg=beamer@headertext2}
+               \setbeamercolor{Feather}{fg=beamer@fronttext}
+}
+
+\mode<all>
